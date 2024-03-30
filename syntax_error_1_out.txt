@@ -1,0 +1,4 @@
+Step 0:<0,                                                                                                                                                                
+Step 1:<0, (fun 4),                                                                                                                                                       shift 4
+Step 2:<0, (fun 4), (id 10),                                                                                                                                              shift 10
+Step 3:<0, (fun 4), (id 10), $                                                                                                                                            syntax error

@@ -1,0 +1,54 @@
+Step 0:<0,                                                                                                                                                                
+Step 1:<0, (fun 4),                                                                                                                                                       shift 4
+Step 2:<0, (fun 4), (id 10),                                                                                                                                              shift 10
+Step 3:<0, (fun 4), (id 10), (bool 21),                                                                                                                                   shift 21
+Step 4:<0, (fun 4), (id 10), (T 19),                                                                                                                                      reduce T  -> bool
+Step 5:<0, (fun 4), (id 10), (T 19), (id 28),                                                                                                                             shift 28
+Step 6:<0, (fun 4), (id 10), (A 18),                                                                                                                                      reduce A  -> T id
+Step 7:<0, (fun 4), (id 10), (A 18), (-> 27),                                                                                                                             shift 27
+Step 8:<0, (fun 4), (id 10), (A 18), (-> 27), (lit 8),                                                                                                                    shift 8
+Step 9:<0, (fun 4), (id 10), (A 18), (-> 27), (E 6),                                                                                                                      reduce E  -> lit
+Step 10:<0, (fun 4), (id 10), (A 18), (-> 27), (C 33),                                                                                                                    reduce C  -> E
+Step 11:<0, (F 2),                                                                                                                                                        reduce F  -> fun id A -> C
+Step 12:<0, (F 2), (; 9),                                                                                                                                                 shift 9
+Step 13:<0, (F 2), (; 9), (fun 4),                                                                                                                                        shift 4
+Step 14:<0, (F 2), (; 9), (fun 4), (id 10),                                                                                                                               shift 10
+Step 15:<0, (F 2), (; 9), (fun 4), (id 10), (bool 21),                                                                                                                    shift 21
+Step 16:<0, (F 2), (; 9), (fun 4), (id 10), (T 19),                                                                                                                       reduce T  -> bool
+Step 17:<0, (F 2), (; 9), (fun 4), (id 10), (T 19), (id 28),                                                                                                              shift 28
+Step 18:<0, (F 2), (; 9), (fun 4), (id 10), (A 18),                                                                                                                       reduce A  -> T id
+Step 19:<0, (F 2), (; 9), (fun 4), (id 10), (A 18), (-> 27),                                                                                                              shift 27
+Step 20:<0, (F 2), (; 9), (fun 4), (id 10), (A 18), (-> 27), (lit 8),                                                                                                     shift 8
+Step 21:<0, (F 2), (; 9), (fun 4), (id 10), (A 18), (-> 27), (E 6),                                                                                                       reduce E  -> lit
+Step 22:<0, (F 2), (; 9), (fun 4), (id 10), (A 18), (-> 27), (C 33),                                                                                                      reduce C  -> E
+Step 23:<0, (F 2), (; 9), (F 2),                                                                                                                                          reduce F  -> fun id A -> C
+Step 24:<0, (F 2), (; 9), (F 2), (; 9),                                                                                                                                   shift 9
+Step 25:<0, (F 2), (; 9), (F 2), (; 9), (( 7),                                                                                                                            shift 7
+Step 26:<0, (F 2), (; 9), (F 2), (; 9), (( 7), (id 15),                                                                                                                   shift 15
+Step 27:<0, (F 2), (; 9), (F 2), (; 9), (( 7), (id 15), (lit 8),                                                                                                          shift 8
+Step 28:<0, (F 2), (; 9), (F 2), (; 9), (( 7), (id 15), (E 25),                                                                                                           reduce E  -> lit
+Step 29:<0, (F 2), (; 9), (F 2), (; 9), (( 7), (id 15), (I 24),                                                                                                           reduce I  -> E
+Step 30:<0, (F 2), (; 9), (F 2), (; 9), (( 7), (id 15), (I 24), () 31),                                                                                                   shift 31
+Step 31:<0, (F 2), (; 9), (F 2), (; 9), (E 6),                                                                                                                            reduce E  -> ( id I )
+Step 32:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (< 13),                                                                                                                    shift 13
+Step 33:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12),                                                                                                                    reduce R  -> <
+Step 34:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7),                                                                                                             shift 7
+Step 35:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7), (id 15),                                                                                                    shift 15
+Step 36:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7), (id 15), (lit 8),                                                                                           shift 8
+Step 37:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7), (id 15), (E 25),                                                                                            reduce E  -> lit
+Step 38:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7), (id 15), (I 24),                                                                                            reduce I  -> E
+Step 39:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (( 7), (id 15), (I 24), () 31),                                                                                    shift 31
+Step 40:<0, (F 2), (; 9), (F 2), (; 9), (E 6), (R 12), (E 23),                                                                                                            reduce E  -> ( id I )
+Step 41:<0, (F 2), (; 9), (F 2), (; 9), (B 5),                                                                                                                            reduce B  -> E R E
+Step 42:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11),                                                                                                                    shift 11
+Step 43:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (lit 8),                                                                                                           shift 8
+Step 44:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (E 22),                                                                                                            reduce E  -> lit
+Step 45:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (E 22), (: 29),                                                                                                    shift 29
+Step 46:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (E 22), (: 29), (lit 8),                                                                                           shift 8
+Step 47:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (E 22), (: 29), (E 6),                                                                                             reduce E  -> lit
+Step 48:<0, (F 2), (; 9), (F 2), (; 9), (B 5), (? 11), (E 22), (: 29), (C 35),                                                                                            reduce C  -> E
+Step 49:<0, (F 2), (; 9), (F 2), (; 9), (C 3),                                                                                                                            reduce C  -> B ? E : C
+Step 50:<0, (F 2), (; 9), (F 2), (; 9), (S 17),                                                                                                                           reduce S  -> C
+Step 51:<0, (F 2), (; 9), (S 17),                                                                                                                                         reduce S  -> F ; S
+Step 52:<0, (S 1),                                                                                                                                                        reduce S  -> F ; S
+Step 53:<0, (S 1), $                                                                                                                                                      accept
